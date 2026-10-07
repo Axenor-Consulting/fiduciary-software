@@ -1962,3 +1962,6 @@ table.tbl tbody tr:focus-visible { outline: 2px solid var(--brand); outline-offs
 .shell-marketing .bk-vcard h3 { font-size: 1rem; font-weight: 600; color: var(--mk-navy); margin: 0 0 4px; }
 .shell-marketing .bk-vcard p { font-size: .85rem; color: var(--mk-grey); margin: 0; line-height: 1.45; }
 @media (max-width: 640px) { .shell-marketing .bk-vgrid { grid-template-columns: 1fr; } }
+
+.mk-built-by { white-space: nowrap; }
+.mk-built-by a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }

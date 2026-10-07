@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BuiltBy } from "@/components/marketing/BuiltBy";
 import { getBranding } from "@/lib/services/branding";
 import { getSiteContent } from "@/lib/services/content";
 import { getClientLoginEnabled } from "@/lib/services/settings";
@@ -75,6 +76,7 @@ export async function Footer() {
             <Link href="/terms">Terms</Link>
           </span>
           <span>© {year} {legalName || brandName}</span>
+          <BuiltBy />
         </div>
       </div>
     </footer>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BuiltBy } from "@/components/marketing/BuiltBy";
 import { getBranding } from "@/lib/services/branding";
 import { getSiteContent } from "@/lib/services/content";
 import { getClientLoginEnabled } from "@/lib/services/settings";
@@ -52,6 +53,7 @@ export async function Footer() {
           {contact.email && <a href={`mailto:${contact.email}`}>{contact.email}</a>}
           {contact.phone && <a href={telLink(contact.phone)}>{contact.phone}</a>}
           <span>© {year} {legalName || brandName}</span>
+          <BuiltBy />
         </div>
       </div>
     </footer>
